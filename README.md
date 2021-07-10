@@ -8,7 +8,7 @@ Module file's code is encapsulated into a namespace with the name of the module.
 
 ```javascript
 /* myModule.ts file */
-namespace myModule1 {
+namespace myModule {
     export let pouetValue = 42;
     export function sayCoucou(pName: string = 'Michel') {
         console.log('Coucou ' + pName);
@@ -20,7 +20,7 @@ namespace myModule1 {
 When we need to use external features in a ts file, we do it directly without importing, as follow:
 ```javascript
 /* main.js file */
-myModule1.sayCoucou();
+myModule.sayCoucou();
 ```
 
 # Step 3
